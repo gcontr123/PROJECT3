@@ -103,7 +103,7 @@ $(document).ready(function() {
             "</td><td>" +
             result[i].city +
             "</td><td>" +
-            result[i].url +
+            result[i].address +
             "</td></tr>";
         }
         output += "</tbody></table>";
