@@ -91,7 +91,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: "GET",
-      url: "https://data.cityofchicago.org/resource/psqp-6rmg.json", // Using our resources.json file to serve results
+      url: "https://data.cityofchicago.org/resource/cwig-ma7x.json", // Using our resources.json file to serve results
       success: function(result) {
         console.log(result);
         var output =
@@ -99,9 +99,9 @@ $(document).ready(function() {
         for (var i in result) {
           output +=
             "<tr><td>" +
-            result[i].name_ +
+            result[i].aka_name +
             "</td><td>" +
-            result[i].city +
+            result[i].results +
             "</td><td>" +
             result[i].address +
             "</td></tr>";
